@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>サンプル</title>
+</head>
+
+<body>
+    <div class="row" style="margin: 20px">
+        <form id="main_form" class="col-sm-12" novalidate>
+            <div class="form-group">
+                <label for="name" class="row">
+                    <p class="col-sm-2 col-form-label">名前</p>
+                    <p class="col-sm-10 row">
+                        <input type="text" name="name" id="name" class="form-control col-sm-12" placeholder="名前"
+                            required>
+                    </p>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="email" class="row">
+                    <p class="col-sm-2 col-form-label">メールアドレス</p>
+                    <p class="col-sm-10 row">
+                        <input type="email" name="email" id="email" class="form-control col-sm-12" placeholder="メールアドレス"
+                            required>
+                    </p>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="message" class="row">
+                    <p class="col-sm-2 col-form-label">メッセージ</p>
+                    <p class="col-sm-10 row">
+                        <textarea name="message" id="message" cols="30" rows="10" class="form-control col-sm-12"
+                            placeholder="問い合わせ内容" required></textarea>
+                    </p>
+                </label>
+            </div>
+        </form>
+        <button id="btn" class="btn btn-primary col-sm-12">送信</button>
+    </div>
+</body>
+
+</html>

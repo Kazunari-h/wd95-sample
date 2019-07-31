@@ -18,6 +18,7 @@ div {
   height: 100%;
   padding: 5%;
 }
+
 .parallax-bg {
   background-attachment: fixed;
   background-position: center;
@@ -25,19 +26,24 @@ div {
   background-repeat: no-repeat;
   height: 50%;
 }
+
 /*各背景の画像*/
 .img-bg-01 {
   background-image: url("https://dl.dropbox.com/s/lb7lg14z7kszlkj/2016-10-26%2021%2039%2022.jpg?dl=0");
 }
+
 .img-bg-02 {
   background-image: url("https://dl.dropbox.com/s/73ogd4sfwh75h2c/IMG_1417.jpg?dl=0");
 }
+
 .img-bg-03 {
   background-image: url("https://dl.dropbox.com/s/5s6hc5zi2cilz58/s_IMG_0222.jpg?dl=0");
 }
+
 .img-bg-04 {
   background-image: url("https://dl.dropbox.com/s/g502g62sp7b2ty4/IMG_3551.jpg?dl=0");
 }
+
 .img-bg-05 {
   background-image: url("https://dl.dropbox.com/s/1710ifzvqqqagme/IMG_0002_2.jpg?dl=0");
 }
@@ -46,18 +52,44 @@ div {
 .scrollbox1 {
   background-color: #ff3d00;
 }
+
 .scrollbox2 {
   background-color: #ff1744;
 }
+
 .scrollbox3 {
   background-color: #d500f9;
 }
+
 .scrollbox4 {
   background-color: #2979ff;
 }
+
 .scrollbox5 {
   background-color: #1de9b6;
 }
+
 .scrollbox6 {
   background-color: #ffc400;
+}
+
+.parallax-wrapper {
+  margin: 0 auto;
+  width: 935px;
+  height: auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.parallax-wrapper div {
+  width: 293px;
+  height: 293px;
+  background-color: #ff3d00;
+  margin: 0 0 28px 0;
+}
+
+.parallax-wrapper div:nth-child(3n+2) {
+  margin: 0 28px 28px 28px;
 }

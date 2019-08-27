@@ -81,6 +81,7 @@ div {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  visibility: hidden;
 }
 
 .parallax-wrapper div {
@@ -88,8 +89,26 @@ div {
   height: 293px;
   background-color: #ff3d00;
   margin: 0 0 28px 0;
+
 }
 
 .parallax-wrapper div:nth-child(3n+2) {
   margin: 0 28px 28px 28px;
+}
+
+.fadeIn {
+  animation: fadeIn 0.85s ease-in;
+  visibility: visible;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    margin-top: 28px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
 }

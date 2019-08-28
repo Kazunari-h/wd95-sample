@@ -6,26 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>parallax</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="parallax.css">
     <script src="https://code.jquery.com/jquery-2.2.4.js"
         integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="./parallax.js"></script>
+
+
+
 </head>
 
 <body>
-    <div class="scrollbox1">Name</div>
-    <div class="parallax-bg img-bg-01">Kazunari Hirosawa</div>
-    <div class="scrollbox2">Age</div>
-    <div class="parallax-bg img-bg-02">29</div>
-    <div class="scrollbox3">Job</div>
-    <div class="parallax-bg img-bg-03">iOS Engineer</div>
-    <div class="scrollbox4">Hobby</div>
-    <div class="parallax-bg img-bg-04">Fishing</div>
-    <div class="scrollbox5">Contact</div>
-    <div class="parallax-bg img-bg-05">hogehoge@hoge.hoge</div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <p><img src="./images/swiper01.jpg" alt="swiper"></p>
+            </div>
+            <div class="swiper-slide">
+                <p><img src="./images/swiper02.jpg" alt="swiper"></p>
+            </div>
+            <div class="swiper-slide">
+                <p><img src="./images/swiper03.jpg" alt="swiper"></p>
+            </div>
+            <div class="swiper-slide">
+                <p><img src="./images/swiper04.jpg" alt="swiper"></p>
+            </div>
+            <div class="swiper-slide">
+                <p><img src="./images/swiper05.jpg" alt="swiper"></p>
+            </div>
+            <div class="swiper-slide">
+                <p><img src="./images/swiper06.jpg" alt="swiper"></p>
+            </div>
+            <div class="swiper-slide">
+                <p><img src="./images/swiper07.jpg" alt="swiper"></p>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next">
+            <i class="fas fa-arrow-alt-circle-right fa-4x"></i>
+        </div>
+        <div class="swiper-button-prev">
+            <i class="fas fa-arrow-alt-circle-left fa-4x"></i>
+        </div>
+    </div>
+
+    <div class="scrollbox scrollbox1">Name</div>
+    <div class="scrollbox parallax-bg img-bg-01">Kazunari Hirosawa</div>
+    <div class="scrollbox scrollbox2">Age</div>
+    <div class="scrollbox parallax-bg img-bg-02">29</div>
+    <div class="scrollbox scrollbox3">Job</div>
+    <div class="scrollbox parallax-bg img-bg-03">iOS Engineer</div>
+    <div class="scrollbox scrollbox4">Hobby</div>
+    <div class="scrollbox parallax-bg img-bg-04">Fishing</div>
+    <div class="scrollbox scrollbox5">Contact</div>
+    <div class="scrollbox parallax-bg img-bg-05">hogehoge@hoge.hoge</div>
     <!-- <div class="scrollbox6">I get along</div> -->
-    <div class="scrollbox7">Works</div>
-    <div class="parallax-bg img-bg-07">
+    <div class="scrollbox scrollbox6">Works</div>
+    <div class="scrollbox parallax-bg img-bg-07">
         <div class="parallax-wrapper">
             <div>1つの仕事</div>
             <div>2つの仕事</div>
@@ -34,6 +76,130 @@
             <div>5つの仕事</div>
         </div>
     </div>
+    <div class="scrollbox scrollbox5">Contact</div>
+    <div class="form">
+        <div class="content is-medium">
+            <!-- <h1 class="title">お問い合わせ</h1> -->
+
+            <div class="field is-horizontal">
+                <div class="field-label is-medium">
+                    <label class="label">企業名 <span class="tag is-danger is-small">必須</span></label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is-medium" type="text" value="" placeholder="株式会社ジュラワークス">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-medium">
+                    <label class="label">所在地 <span class="tag is-info is-small">任意</span></label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is-medium" type="text" value="" placeholder="東京都千代田区神田">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-medium">
+                    <label class="label">電話番号 <span class="tag is-info is-small">任意</span></label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is-medium" type="tel" value="" placeholder="03-1234-5678">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-medium">
+                    <label class="label">メール <span class="tag is-danger is-small">必須</span></label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is-medium" type="email" value="" placeholder="info@jura.works">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-medium">
+                    <label class="label">担当者名 <span class="tag is-danger is-small">必須</span></label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is-medium" type="text" value="" placeholder="ヒロサワ">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-medium">
+                    <label class="label">内容 <span class="tag is-danger is-small">必須</span></label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <p class="control">
+                            <textarea class="textarea is-medium" placeholder="600文字"></textarea>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label">
+                    <!-- Left empty for spacing -->
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox" required> <a href="#">利用規約</a>を確認の上、送信します。
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label">
+                    <!-- Left empty for spacing -->
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <button class="button is-primary is-medium">
+                                送信
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>

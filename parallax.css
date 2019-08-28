@@ -3,20 +3,27 @@ body,
 html {
   height: 100%;
   margin: 0 auto;
-  letter-spacing: 2px;
-  font-size: 10px;
 }
 
 /*固定する背景*/
-div {
+.scrollbox {
+  letter-spacing: 2px;
+  font-size: 5rem;
   box-sizing: border-box;
   color: #fff;
-  font-size: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   padding: 5%;
+}
+
+.form {
+  box-sizing: border-box;
+  margin: auto;
+  width: 60%;
+  height: auto;
+  padding: 20% 5%;
 }
 
 .parallax-bg {
@@ -48,6 +55,10 @@ div {
   background-image: url("https://dl.dropbox.com/s/1710ifzvqqqagme/IMG_0002_2.jpg?dl=0");
 }
 
+.img-bg-07 {
+  height: auto;
+}
+
 /*スクロールするコンテンツ*/
 .scrollbox1 {
   background-color: #ff3d00;
@@ -74,9 +85,9 @@ div {
 }
 
 .parallax-wrapper {
+  font-size: 3rem;
   margin: 0 auto;
   width: 935px;
-  height: auto;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +100,8 @@ div {
   height: 293px;
   background-color: #ff3d00;
   margin: 0 0 28px 0;
-
+  text-align: center;
+  line-height: 293px;
 }
 
 .parallax-wrapper div:nth-child(3n+2) {
@@ -111,4 +123,55 @@ div {
     opacity: 1;
     margin-top: 0;
   }
+}
+
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide>div {
+  height: 100%;
+  padding: 2.5rem 1.25rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  top: 50%;
+  margin-top: -1rem;
+  z-index: 10;
+  cursor: pointer;
+  background-image: none;
+}
+
+.swiper-slide p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightslategray;
+}
+
+.swiper-slide p img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.field:not(:last-child) {
+  margin-bottom: 1rem;
 }

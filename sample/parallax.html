@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>parallax</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="parallax.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="./parallax.js"></script>
+
+</head>
+
+<body>
+    <!-- 動画背景 -->
+    <div class="wrap">
+        <!-- 背景用の動画ファイル -->
+        <video id="bg-video" poster="video_thumbnail.jpg" muted autoplay loop>
+            <source src="video/1.mp4" type="video/mp4">
+            <source src="video/2.mp4" type="video/mp4">
+            <source src="video/3.mp4" type="video/mp4">
+            <source src="video/4.mp4" type="video/mp4">
+        </video>
+        <!-- 背景の上に表示させたいコンテンツ -->
+        <div class="header-title">
+            <p>
+                Kazunari Hirosawa
+            </p>
+        </div>
+    </div>
+
+    <div class="scrollbox scrollbox1">Name</div>
+    <div class="scrollbox parallax-bg img-bg-01">Kazunari Hirosawa</div>
+    <div class="scrollbox scrollbox2">Age</div>
+    <div class="scrollbox parallax-bg img-bg-02">29</div>
+    <div class="scrollbox scrollbox3">Job</div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <p><img src="./images/swiper01.jpg" alt="swiper"></p>
+            </div>
+            <div class="swiper-slide">
+                <p><img src="./images/swiper02.jpg" alt="swiper"></p>
+            </div>
+            <div class="swiper-slide">
+                <p><img src="./images/swiper03.jpg" alt="swiper"></p>
+            </div>
+            <div class="swiper-slide">
+                <p><img src="./images/swiper04.jpg" alt="swiper"></p>
+            </div>
+            <div class="swiper-slide">
+                <p><img src="./images/swiper05.jpg" alt="swiper"></p>
+            </div>
+            <div class="swiper-slide">
+                <p><img src="./images/swiper06.jpg" alt="swiper"></p>
+            </div>
+            <div class="swiper-slide">
+                <p><img src="./images/swiper07.jpg" alt="swiper"></p>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next">
+            <i class="fas fa-arrow-alt-circle-right fa-4x"></i>
+        </div>
+        <div class="swiper-button-prev">
+            <i class="fas fa-arrow-alt-circle-left fa-4x"></i>
+        </div>
+    </div>
+
+    <!-- <div class="scrollbox parallax-bg img-bg-03">iOS Engineer</div> -->
+    <div class="scrollbox scrollbox4">Hobby</div>
+    <div class="scrollbox parallax-bg img-bg-04">Fishing</div>
+    <div class="scrollbox scrollbox5">Contact</div>
+    <div class="scrollbox parallax-bg img-bg-05">hogehoge@hoge.hoge</div>
+
+    <!-- <div class="scrollbox6">I get along</div> -->
+    <div class="scrollbox scrollbox6">Works</div>
+    <div class="scrollbox parallax-bg img-bg-07">
+        <div class="parallax-wrapper">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+        </div>
+    </div>
+    <div class="scrollbox scrollbox5">Contact</div>
+    <div class="form">
+        <div class="container">
+            <section class="hero is-medium">
+                <div class="hero-body">
+                    <div>
+                        <div class="columns">
+                            <div
+                                class="column is-8-fullhd is-8-desktop is-8-tablet is-offset-2-fullhd is-offset-2-desktop is-offset-2-tablet">
+                                <h1 class="title has-text-centered has-text-white m-b-50">
+                                    メールアドレスを登録して、更新情報をもらおう！
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div
+                                class="column is-6-fullhd is-6-desktop is-6-tablet is-offset-3-fullhd is-offset-3-desktop is-offset-3-tablet">
+                                <div class="get-started-transparent">
+                                    <div>
+                                        <div class="get-started-section">
+                                            <div class="field is-grouped is-text-centered">
+                                                <div class="control has-icons-left has-icons-right">
+                                                    <input class="input is-large" type="email" placeholder="Email">
+                                                    <span class="icon is-medium is-left">
+                                                        <i class="fas fa-envelope"></i>
+                                                    </span>
+                                                </div>
+                                                <p class="control"><a class="button is-primary is-large"> Register now
+                                                    </a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+        let swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

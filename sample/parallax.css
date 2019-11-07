@@ -1,0 +1,222 @@
+/*画面全体の設定*/
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*固定する背景*/
+.scrollbox {
+  letter-spacing: 2px;
+  font-size: 5rem;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 5%;
+}
+
+.form {
+  box-sizing: border-box;
+  margin: auto;
+  height: auto;
+  padding: 20% 5%;
+  background: linear-gradient(-45deg, rgba(4, 114, 124, 0.4), rgba(17, 66, 99, 0.6));
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%;
+}
+
+/*各背景の画像*/
+.img-bg-01 {
+  background-image: url("https://dl.dropbox.com/s/lb7lg14z7kszlkj/2016-10-26%2021%2039%2022.jpg?dl=0");
+}
+
+.img-bg-02 {
+  background-image: url("https://dl.dropbox.com/s/73ogd4sfwh75h2c/IMG_1417.jpg?dl=0");
+}
+
+.img-bg-03 {
+  background-image: url("https://dl.dropbox.com/s/5s6hc5zi2cilz58/s_IMG_0222.jpg?dl=0");
+}
+
+.img-bg-04 {
+  background-image: url("https://dl.dropbox.com/s/g502g62sp7b2ty4/IMG_3551.jpg?dl=0");
+}
+
+.img-bg-05 {
+  background-image: url("https://dl.dropbox.com/s/1710ifzvqqqagme/IMG_0002_2.jpg?dl=0");
+}
+
+.img-bg-07 {
+  height: auto;
+}
+
+/*スクロールするコンテンツ*/
+.scrollbox1 {
+  background-color: #ff3d00;
+}
+
+.scrollbox2 {
+  background-color: #ff1744;
+}
+
+.scrollbox3 {
+  background-color: #d500f9;
+}
+
+.scrollbox4 {
+  background-color: #2979ff;
+}
+
+.scrollbox5 {
+  background-color: #1de9b6;
+}
+
+.scrollbox6 {
+  background-color: #ffc400;
+}
+
+.parallax-wrapper {
+  font-size: 3rem;
+  margin: 0 auto;
+  width: 935px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  visibility: hidden;
+}
+
+.parallax-wrapper div {
+  width: 293px;
+  height: 293px;
+  background-color: #ff3d00;
+  margin: 0 0 28px 0;
+  text-align: center;
+  line-height: 293px;
+}
+
+.parallax-wrapper div:nth-child(3n+2) {
+  margin: 0 28px 28px 28px;
+}
+
+.fadeIn {
+  animation: fadeIn 0.85s ease-in;
+  visibility: visible;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    margin-top: 28px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide>div {
+  height: 100%;
+  padding: 2.5rem 1.25rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  top: 50%;
+  margin-top: -1rem;
+  z-index: 10;
+  cursor: pointer;
+  background-image: none;
+}
+
+.swiper-slide p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightslategray;
+}
+
+.swiper-slide p img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.field:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/* ----- 背景用の動画ファイル ----- */
+#bg-video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url('video_thumbnail.jpg') no-repeat;
+  background-size: cover;
+}
+
+/* ----- 背景の上に表示させたいコンテンツ ----- */
+.header-title {
+  position: relative;
+  color: white;
+  /*必ず必要*/
+  z-index: 2;
+  /*必ず必要*/
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  height: 100vh;
+  font-size: 5rem;
+
+}
+
+/* .header-title p {
+  font-size: 2em;
+  background: #fff;
+  padding: 80px;
+} */
+
+.wrap {
+  height: 100vh;
+  background: linear-gradient(-45deg, rgba(4, 114, 124, 0.4), rgba(17, 66, 99, 0.6));
+}
+
+.field.is-grouped {
+  justify-content: center;
+}

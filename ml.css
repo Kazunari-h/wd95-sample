@@ -1,0 +1,101 @@
+/*画面全体の設定*/
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
+  /* background: #363636; */
+  z-index: -101;
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+html {
+  background: #363636;
+}
+
+.fadeIn {
+  animation: fadeIn 0.85s ease-in;
+  visibility: visible;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    margin-top: 28px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+/* ----- 背景用の動画ファイル ----- */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url('video_thumbnail.jpg') no-repeat;
+  background-size: cover;
+}
+
+/* ----- 背景の上に表示させたいコンテンツ ----- */
+.header-title {
+  position: relative;
+  top: 0;
+  color: white;
+  /*必ず必要*/
+  z-index: 2;
+  /*必ず必要*/
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  height: 100%;
+  font-size: 5rem;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* .header-title p {
+  font-size: 2em;
+  background: #fff;
+  padding: 80px;
+} */
+
+.wrap {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(-45deg, rgba(4, 114, 124, 0.4), rgba(17, 66, 99, 0.6));
+  overflow: hidden;
+}
+
+.wrap img {
+  position: relative;
+  top: 30px;
+  left: 25px;
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  top: 30px;
+  right: 30px;
+  height: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.menu li {
+  margin: 0 1rem;
+}

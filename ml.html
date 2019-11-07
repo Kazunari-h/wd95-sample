@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>parallax</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="ml.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="./parallax.js"></script>
+
+</head>
+
+<body>
+    <!-- 動画背景 -->
+    <div class="wrap">
+        <img src="./images/mllogo.png" alt="logo">
+        <!-- 背景用の動画ファイル -->
+        <video id="bg-video" poster="video_thumbnail.jpg" muted autoplay loop>
+            <source src="video/1.mp4" type="video/mp4">
+            <source src="video/2.mp4" type="video/mp4">
+            <source src="video/3.mp4" type="video/mp4">
+            <source src="video/4.mp4" type="video/mp4">
+        </video>
+        <!-- 背景の上に表示させたいコンテンツ -->
+        <div class="header-title">
+            <p>
+                Sample Web Page
+            </p>
+        </div>
+        <ul class="menu">
+            <li>Director</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

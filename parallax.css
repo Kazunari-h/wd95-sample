@@ -21,9 +21,9 @@ html {
 .form {
   box-sizing: border-box;
   margin: auto;
-  width: 60%;
   height: auto;
   padding: 20% 5%;
+  background: linear-gradient(-45deg, rgba(4, 114, 124, 0.4), rgba(17, 66, 99, 0.6));
 }
 
 .parallax-bg {
@@ -215,4 +215,8 @@ html {
 .wrap {
   height: 100vh;
   background: linear-gradient(-45deg, rgba(4, 114, 124, 0.4), rgba(17, 66, 99, 0.6));
+}
+
+.field.is-grouped {
+  justify-content: center;
 }

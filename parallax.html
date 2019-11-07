@@ -15,11 +15,31 @@
         integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="./parallax.js"></script>
 
-
-
 </head>
 
 <body>
+    <!-- 動画背景 -->
+    <div class="wrap">
+        <!-- 背景用の動画ファイル -->
+        <video id="bg-video" poster="video_thumbnail.jpg" muted autoplay loop>
+            <source src="video/1.mp4" type="video/mp4">
+            <source src="video/2.mp4" type="video/mp4">
+            <source src="video/3.mp4" type="video/mp4">
+            <source src="video/4.mp4" type="video/mp4">
+        </video>
+        <!-- 背景の上に表示させたいコンテンツ -->
+        <div class="header-title">
+            <p>
+                Kazunari Hirosawa
+            </p>
+        </div>
+    </div>
+
+    <div class="scrollbox scrollbox1">Name</div>
+    <div class="scrollbox parallax-bg img-bg-01">Kazunari Hirosawa</div>
+    <div class="scrollbox scrollbox2">Age</div>
+    <div class="scrollbox parallax-bg img-bg-02">29</div>
+    <div class="scrollbox scrollbox3">Job</div>
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -55,25 +75,21 @@
         </div>
     </div>
 
-    <div class="scrollbox scrollbox1">Name</div>
-    <div class="scrollbox parallax-bg img-bg-01">Kazunari Hirosawa</div>
-    <div class="scrollbox scrollbox2">Age</div>
-    <div class="scrollbox parallax-bg img-bg-02">29</div>
-    <div class="scrollbox scrollbox3">Job</div>
-    <div class="scrollbox parallax-bg img-bg-03">iOS Engineer</div>
+    <!-- <div class="scrollbox parallax-bg img-bg-03">iOS Engineer</div> -->
     <div class="scrollbox scrollbox4">Hobby</div>
     <div class="scrollbox parallax-bg img-bg-04">Fishing</div>
     <div class="scrollbox scrollbox5">Contact</div>
     <div class="scrollbox parallax-bg img-bg-05">hogehoge@hoge.hoge</div>
+
     <!-- <div class="scrollbox6">I get along</div> -->
     <div class="scrollbox scrollbox6">Works</div>
     <div class="scrollbox parallax-bg img-bg-07">
         <div class="parallax-wrapper">
-            <div>1つの仕事</div>
-            <div>2つの仕事</div>
-            <div>3つの仕事</div>
-            <div>4つの仕事</div>
-            <div>5つの仕事</div>
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
         </div>
     </div>
     <div class="scrollbox scrollbox5">Contact</div>
